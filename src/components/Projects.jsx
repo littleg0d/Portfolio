@@ -32,7 +32,7 @@ const Projects = () => {
         <div className='mb-12'>
           <p className='text-4xl font-bold text-slate-100 inline'>Proyectos</p>
           <div className='h-1 w-20 bg-cyan-400 rounded-full mt-2'></div>
-          <p className='py-4 text-slate-400'>// Arquitecturas en las que estoy trabajando</p>
+          <p className='py-4 text-slate-400'>Arquitecturas en las que he/estoy trabajando</p>
         </div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>

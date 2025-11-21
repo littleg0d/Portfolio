@@ -18,7 +18,7 @@ const Skills = () => {
           <div className='mb-12'>
               <p className='text-4xl font-bold text-slate-100 inline border-b-4 border-cyan-400/0'>Habilidades</p>
               <div className='h-1 w-20 bg-cyan-400 rounded-full mt-2'></div>
-              <p className='py-4 text-slate-400'>// Tecnologías con las que construyo soluciones</p>
+              <p className='py-4 text-slate-400'>Tecnologías con las que construyo soluciones</p>
           </div>
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center'>
