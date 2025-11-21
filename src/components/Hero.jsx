@@ -67,7 +67,7 @@ const Hero = () => {
         >
           <div className='w-48 h-48 md:w-72 md:h-72 relative z-10'>
             <img
-              src="dist/assets/image.png"
+              src="public/assets/image.png"
               alt="Federico Rojas"
               className='w-full h-full object-cover rounded-full border-4 border-slate-800 shadow-2xl'
             />
