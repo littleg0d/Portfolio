@@ -1,17 +1,14 @@
-import { useState } from 'react'; // <--- NECESITAS IMPORTAR ESTO
+import { useState } from 'react';
 
 const Contact = () => {
-  // 1. Define el endpoint de Getform. ¡Cámbialo por tu ID REAL!
   const FORM_ENDPOINT = "https://getform.io/f/awnyljnb";
 
-  // 2. Estado para los datos del formulario
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
 
-  // 3. Estado para la gestión del envío
   const [status, setStatus] = useState({
     submitting: false,
     success: false,
@@ -30,7 +27,7 @@ const Contact = () => {
     }
   };
 
-  // 4. Maneja el envío del formulario de forma asíncrona
+  // Maneja el envío del formulario de forma asíncrona
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -74,7 +71,7 @@ const Contact = () => {
             <div className='pb-8'>
                 <p className='text-4xl font-bold text-slate-100 inline'>Contacto</p>
                 <div className='h-1 w-20 bg-cyan-400 rounded-full mt-2'></div>
-                <p className='text-slate-400 py-4'>// Hablemos de código y arquitectura</p>
+                <p className='text-slate-400 py-4'>Comunicate conmigo</p>
             </div>
 
             {/* Inputs vinculados al estado 'formData' */}
