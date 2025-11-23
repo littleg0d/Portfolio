@@ -125,7 +125,7 @@ const Contact = () => {
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               asChild
             >
-              <a href="https://www.linkedin.com/in/federico-rojas-aa64522b6/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Linkedin className="w-5 h-5" />
                 LinkedIn
               </a>
