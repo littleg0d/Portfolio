@@ -1,3 +1,5 @@
+import { Badge } from "@/components/ui/badge";
+
 const Education = () => {
   return (
     <section className="px-6 py-20 border-t border-border">
@@ -8,7 +10,10 @@ const Education = () => {
             <div className="flex items-start gap-4">
               <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
               <div className="flex-1">
-                <h3 className="text-2xl font-semibold mb-2">Ingeniería en Computación</h3>
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="text-2xl font-semibold">Ingeniería en Computación</h3>
+                  <Badge variant="secondary" className="text-xs">En proceso</Badge>
+                </div>
                 <p className="text-lg text-primary mb-2">Universidad Nacional de La Plata (UNLP)</p>
                 <p className="text-muted-foreground">La Plata, Buenos Aires</p>
               </div>
