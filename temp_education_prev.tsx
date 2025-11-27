@@ -1,24 +1,21 @@
 import { Badge } from "@/components/ui/badge";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 const Education = () => {
-  const { t } = useLanguage();
-
   return (
-    <section id="education" className="px-6 py-20 border-t border-border">
+    <section className="px-6 py-20 border-t border-border">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 text-primary">{t("education.title")}</h2>
+        <h2 className="text-4xl font-bold mb-12 text-primary">Educación</h2>
         <div className="space-y-8">
           <div className="bg-card border border-border rounded-lg p-8 hover:border-primary transition-colors">
             <div className="flex items-start gap-4">
               <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-2xl font-semibold">{t("education.ce.title")}</h3>
-                  <Badge variant="secondary" className="text-xs">{t("education.ce.badge")}</Badge>
+                  <h3 className="text-2xl font-semibold">Ingeniería en Computación</h3>
+                  <Badge variant="secondary" className="text-xs">En proceso</Badge>
                 </div>
-                <p className="text-lg text-primary mb-2">{t("education.ce.school")}</p>
-                <p className="text-muted-foreground">{t("education.ce.location")}</p>
+                <p className="text-lg text-primary mb-2">Universidad Nacional de La Plata (UNLP)</p>
+                <p className="text-muted-foreground">La Plata, Buenos Aires</p>
               </div>
             </div>
           </div>
@@ -27,9 +24,9 @@ const Education = () => {
             <div className="flex items-start gap-4">
               <div className="w-2 h-2 rounded-full bg-primary mt-2"></div>
               <div className="flex-1">
-                <h3 className="text-2xl font-semibold mb-2">{t("education.ct.title")}</h3>
-                <p className="text-lg text-primary mb-2">{t("education.ct.school")}</p>
-                <p className="text-muted-foreground">{t("education.ct.location")}</p>
+                <h3 className="text-2xl font-semibold mb-2">Técnico en Informática</h3>
+                <p className="text-lg text-primary mb-2">Escuela Técnica N°1</p>
+                <p className="text-muted-foreground">Chacabuco, Buenos Aires</p>
               </div>
             </div>
           </div>

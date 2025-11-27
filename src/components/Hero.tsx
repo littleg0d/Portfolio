@@ -1,7 +1,7 @@
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20">
+    <section id="hero" className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl w-full">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="relative animate-in fade-in zoom-in duration-1000 delay-300 fill-mode-both">
