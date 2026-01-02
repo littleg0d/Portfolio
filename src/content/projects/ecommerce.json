@@ -1,0 +1,13 @@
+{
+    "id": "ecommerce",
+    "titleKey": "projects.ecommerce.title",
+    "descKey": "projects.ecommerce.desc",
+    "detailsKey": "projects.ecommerce.details",
+    "technologies": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Docker"
+    ],
+    "githubUrl": "https://github.com/littleg0d"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "microservices",
+    "titleKey": "projects.microservices.title",
+    "descKey": "projects.microservices.desc",
+    "detailsKey": "projects.microservices.details",
+    "technologies": [
+        "Java",
+        "Spring Cloud",
+        "Docker",
+        "PostgreSQL"
+    ],
+    "githubUrl": "https://github.com/littleg0d"
+}

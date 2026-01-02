@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { DynamicNavbar } from '../components/ui/dynamic-navbar';
+import LanguageToggle from '../components/LanguageToggle';
+import { ScrollProgress } from '../components/ui/scroll-progress';
+import Hero from '../components/sections/Hero';
+import About from '../components/sections/About';
+import Skills from '../components/sections/Skills';
+import Projects from '../components/sections/Projects';
+import Education from '../components/sections/Education';
+import Certifications from '../components/sections/Certifications';
+import Contact from '../components/sections/Contact';
+import Footer from '../components/sections/Footer';
+import { Toaster } from '@/components/ui/toaster';
+
+const projects = await getCollection('projects');
+const certifications = await getCollection('certifications');
+---
+
+<Layout title="Portfolio | Backend Developer">
+  <!-- 
+    Islands Architecture:
+    - Navbar: client:load (Needs to be interactive immediately for mobile menu and language toggle)
+    - Hero: client:load (Often has animations)
+    - Others: client:visible (Hydrate only when scrolled into view)
+  -->
+
+  <div className="fixed top-0 right-0 left-0 z-[9999]">
+    <ScrollProgress client:load />
+  </div>
+  <div className="relative z-[5000]">
+    <DynamicNavbar client:load />
+    {/* Mobile Language Toggle */}
+    <LanguageToggle
+      client:load
+      className="glass-panel fixed top-4 right-4 z-[5000] shadow-lg md:hidden"
+    />
+  </div>
+
+  <main>
+    <Hero client:load />
+    <About client:load />
+    <Skills client:load />
+    <Projects client:load projects={projects.map((p) => p.data)} />
+    <Certifications client:load certifications={certifications.map((c) => c.data)} />
+    <Education client:load />
+    <Contact client:load />
+  </main>
+
+  <Footer client:visible />
+
+  <Toaster client:idle />
+</Layout>

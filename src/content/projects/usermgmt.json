@@ -1,0 +1,13 @@
+{
+    "id": "usermgmt",
+    "titleKey": "projects.usermgmt.title",
+    "descKey": "projects.usermgmt.desc",
+    "detailsKey": "projects.usermgmt.details",
+    "technologies": [
+        "Java",
+        "Spring Boot",
+        "Maven",
+        "PostgreSQL"
+    ],
+    "githubUrl": "https://github.com/littleg0d"
+}
